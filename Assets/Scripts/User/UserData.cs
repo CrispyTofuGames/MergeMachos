@@ -211,7 +211,7 @@ public class UserData
         public static int expositorSkins = 8;
         public static int groundSkins = 8;
         public static int frameSkins = 4;
-        public static int dinosaurs = 34;
-        public static int extraSkins = 7;
+        public static int dinosaurs = 14;
+        public static int extraSkins = 0;
     }
 }
