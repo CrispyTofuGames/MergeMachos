@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: b51937d54f266864a8aac24f089adf83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5097788275815622908
+    second: pokemon-sprite-png-14_0
+  - first:
+      213: -6270208742844155827
+    second: pokemon-sprite-png-14_1
+  - first:
+      213: 1660661002178501819
+    second: pokemon-sprite-png-14_2
+  - first:
+      213: -2196269092405786071
+    second: pokemon-sprite-png-14_3
+  - first:
+      213: 1244273472550924811
+    second: pokemon-sprite-png-14_4
+  - first:
+      213: 4844945511168006458
+    second: pokemon-sprite-png-14_5
+  - first:
+      213: -2949913217776410142
+    second: pokemon-sprite-png-14_6
+  - first:
+      213: 7973995632151578354
+    second: pokemon-sprite-png-14_7
+  - first:
+      213: -3758488845721942987
+    second: pokemon-sprite-png-14_8
+  - first:
+      213: 7078477284539260516
+    second: pokemon-sprite-png-14_9
+  - first:
+      213: 7040692624691072590
+    second: pokemon-sprite-png-14_10
+  - first:
+      213: -1483678115418268885
+    second: pokemon-sprite-png-14_11
+  - first:
+      213: -23548731974242758
+    second: pokemon-sprite-png-14_12
+  - first:
+      213: 6090848194453662857
+    second: pokemon-sprite-png-14_13
+  - first:
+      213: -6183368058048565781
+    second: pokemon-sprite-png-14_14
+  - first:
+      213: -7816983380434534529
+    second: pokemon-sprite-png-14_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf824287d6bfeb640800000000000000
+      internalID: 5097788275815622908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 192
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48b93f8e5ebbf8a0800000000000000
+      internalID: -6270208742844155827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 192
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc9137026adb0710800000000000000
+      internalID: 1660661002178501819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 192
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92acbf395e84581e0800000000000000
+      internalID: -2196269092405786071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02f6de712c844110800000000000000
+      internalID: 1244273472550924811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 128
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39da45d544bc3340800000000000000
+      internalID: 4844945511168006458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 128
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e12538ce8dcf07d0800000000000000
+      internalID: -2949913217776410142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 128
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f649e687c259ae60800000000000000
+      internalID: 7973995632151578354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534c972ee4a27dbc0800000000000000
+      internalID: -3758488845721942987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 64
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e52af369dcb3260800000000000000
+      internalID: 7078477284539260516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_10
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 64
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e8c6393a095b160800000000000000
+      internalID: 7040692624691072590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 64
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b19796d9ae86be0800000000000000
+      internalID: -1483678115418268885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ea3c39d865caff0800000000000000
+      internalID: -23548731974242758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c6d33892a078450800000000000000
+      internalID: 6090848194453662857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_14
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beda4881383403aa0800000000000000
+      internalID: -6183368058048565781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon-sprite-png-14_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 46.75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f311a180f748390800000000000000
+      internalID: -7816983380434534529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

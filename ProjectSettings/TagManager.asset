@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Cell
+  - Effects
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: VFX
+    uniqueID: 1273110419
+    locked: 0
+  - name: Dino
+    uniqueID: 368488995
+    locked: 0
+  - name: Row0
+    uniqueID: 2794916381
+    locked: 0
+  - name: Row1
+    uniqueID: 3409989633
+    locked: 0
+  - name: Row2
+    uniqueID: 2458342797
+    locked: 0
+  - name: Row3
+    uniqueID: 1820610551
+    locked: 0
+  - name: PickedDino
+    uniqueID: 767826953
+    locked: 0
+  - name: LootBox
+    uniqueID: 1563384191
+    locked: 0

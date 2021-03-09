@@ -1,0 +1,706 @@
+[
+  {
+    "key": "LOADING",
+    "value": "Loading..."
+  },
+  {
+    "key": "CONTINUE",
+    "value": "- Continue -"
+  },
+  {
+    "key": "CLOSE",
+    "value": "- Tap to close -"
+  },
+  {
+    "key": "CONV_0_0",
+    "value": "Welcome! We were waiting for you! I need your help to run this"
+  },
+  {
+    "key": "CONV_0_1",
+    "value": "This is our tavern, our purpose is to bring clients and earn lots and lots of money"
+  },
+  {
+    "key": "CONV_0_2",
+    "value": "We need new girls. Try to hire our new employee!"
+  },
+  {
+    "key": "CONV_1_0",
+    "value": "Put her to work on any available table"
+  },
+  {
+    "key": "CONV_2_0",
+    "value": "Touch on her to bring her back"
+  },
+  {
+    "key": "CONV_3_0",
+    "value": "You can also put her on the table touching twice on the screen, try it!"
+  },
+  {
+    "key": "CONV_4_0",
+    "value": "Cool! You know the essentials already, it's time to work hard"
+  },
+  {
+    "key": "CONV_5_0",
+    "value": "Customers love beer, start the \"happy hour\" to liven them up"
+  },
+  {
+    "key": "ADVICE_NOEMPTYCELLS",
+    "value": "You don't have seats available"
+  },
+  {
+    "key": "ADVICE_NOEXPOSITORS",
+    "value": "You don't have tables available"
+  },
+  {
+    "key": "LEVEL_UP_PANEL",
+    "value": "LEVEL UP"
+  },
+  {
+    "key": "REWARDS",
+    "value": "Rewards"
+  },
+  {
+    "key": "UNLOCK",
+    "value": "UNLOCKED!"
+  },
+  {
+    "key": "UNLOCK_DINO_QUALITY",
+    "value": "Hotness"
+  },
+  {
+    "key": "SHOP",
+    "value": "SHOP"
+  },
+  {
+    "key": "SPEEDUP",
+    "value": "HAPPY HOUR"
+  },
+  {
+    "key": "ADDSECONDS",
+    "value": "Add 200 seconds more"
+  },
+  {
+    "key": "DAYCARE",
+    "value": "HIRE"
+  },
+  {
+    "key": "SPIN",
+    "value": "SPIN"
+  },
+  {
+    "key": "UPGRADES",
+    "value": "UPGRADES"
+  },
+  {
+    "key": "MISSIONS",
+    "value": "QUESTS"
+  },
+  {
+    "key": "SPECIAL_OFFER",
+    "value": "Special offer"
+  },
+  {
+    "key": "GEMS_SHOP",
+    "value": "Gems shop"
+  },
+  {
+    "key": "CURRENCY_SHOP",
+    "value": "Currency shop"
+  },
+  {
+    "key": "CURRENCY_ADVICE",
+    "value": "The amount of gold depends on your earnings per second"
+  },
+  {
+    "key": "FREE",
+    "value": "FREE"
+  },
+  {
+    "key": "CUSTOMIZE",
+    "value": "CUSTOMIZE"
+  },
+  {
+    "key": "UPGRADES_INFO",
+    "value": "Exchange girld for upgrades"
+  },
+  {
+    "key": "UPGRADES_BUTTON",
+    "value": "level up"
+  },
+  {
+    "key": "UPGRADES_INFO_PANEL_0",
+    "value": "x"
+  },
+  {
+    "key": "MISSIONS_DAILY",
+    "value": "Daily missions"
+  },
+  {
+    "key": "MISSIONS_ACHIEVEMENT",
+    "value": "Achievements"
+  },
+  {
+    "key": "NEST",
+    "value": "GIFTS"
+  },
+  {
+    "key": "RESTORE",
+    "value": "Restore"
+  },
+  {
+    "key": "VIP_BLACK_PANEL",
+    "value": "x"
+  },
+  {
+    "key": "VIP_PURCHASE",
+    "value": "x"
+  },
+  {
+    "key": "VIP_CONDITIONS",
+    "value": "x"
+  },
+  {
+    "key": "SUBSCRIPTION",
+    "value": "Suscription"
+  },
+  {
+    "key": "PASSIVE_GAINS",
+    "value": "PASSIVE EARNINGS"
+  },
+  {
+    "key": "PASSIVE_GAINS_ADVICE",
+    "value": "Passive earnings do not stock after 2 hours"
+  },
+  {
+    "key": "PASSIVE_GAINS_QUESTION",
+    "value": "Multiply your earnings?"
+  },
+  {
+    "key": "DAILY_REWARD",
+    "value": "DAILY REWARDS"
+  },
+  {
+    "key": "VIP",
+    "value": "VIP"
+  },
+  {
+    "key": "PROFILE",
+    "value": "PROFILE"
+  },
+  {
+    "key": "PROFILE_BUTTON_1",
+    "value": "Statistics"
+  },
+  {
+    "key": "PROFILE_BUTTON_2",
+    "value": "Avatar"
+  },
+  {
+    "key": "PROFILE_BUTTON_3",
+    "value": "Adjustments"
+  },
+  {
+    "key": "PROFILE_PANEL_1",
+    "value": "Player"
+  },
+  {
+    "key": "PROFILE_PANEL_2",
+    "value": "Extras"
+  },
+  {
+    "key": "PROFILE_PANEL_3",
+    "value": "Rewards"
+  },
+  {
+    "key": "PROFILE_SELECT",
+    "value": "Selected"
+  },
+  {
+    "key": "SETTINGS_FX",
+    "value": "Effects"
+  },
+  {
+    "key": "SETTINGS_MUSIC",
+    "value": "Music"
+  },
+  {
+    "key": "CONTACT",
+    "value": "Contact Us"
+  },
+  {
+    "key": "HELP_SUPPORT",
+    "value": "Help and support"
+  },
+  {
+    "key": "PRIVACY",
+    "value": "Privacy"
+  },
+  {
+    "key": "TERMS_OF_USE",
+    "value": "Terms"
+  },
+  {
+    "key": "CREDITS",
+    "value": "Credits"
+  },
+  {
+    "key": "WATCH",
+    "value": "See"
+  },
+  {
+    "key": "PROFITS_S",
+    "value": "Earnings per second"
+  },
+  {
+    "key": "PROFITS_T",
+    "value": "Total earnings"
+  },
+  {
+    "key": "ADVICE_NOT_UNLOCKED",
+    "value": "This girl is not available"
+  },
+  {
+    "key": "ADVICE_NOHARDCOINS",
+    "value": "You dont have enough gems"
+  },
+  {
+    "key": "ADVICE_NO_AD",
+    "value": "You dont have more videos left"
+  },
+  {
+    "key": "ADVICE_NOSOFTCOINS",
+    "value": "You dont have enough money"
+  },
+  {
+    "key": "SPIN_REWARD_HARDCOINS",
+    "value": "You earned {0} gems"
+  },
+  {
+    "key": "SPIN_REWARD_SOFTCOINS",
+    "value": "You earned {0} hours of earnings"
+  },
+  {
+    "key": "SPIN_REWARD_SPEEDUP",
+    "value": "You earned {0} seconds of happy hour"
+  },
+  {
+    "key": "SPIN_REWARD_BOXES",
+    "value": "You earned {0} gifts"
+  },
+  {
+    "key": "UPGRADES_INFO_PANEL_1",
+    "value": "Girls' earnings"
+  },
+  {
+    "key": "UPGRADES_INFO_PANEL_2",
+    "value": "Clients' speed"
+  },
+  {
+    "key": "UPGRADES_INFO_PANEL_3",
+    "value": "Passive earnings"
+  },
+  {
+    "key": "DAILY_REWARD_DAY",
+    "value": "Day {0}"
+  },
+  {
+    "key": "SPIN_REWARD_SOFTCOINS_MINS",
+    "value": "You earned 0 minutes of earnigs"
+  },
+  {
+    "key": "REWARD_HARDCOINS",
+    "value": "{0} GEMS"
+  },
+  {
+    "key": "REWARD_SPEEDUP",
+    "value": "{0} Seconds of happy hour"
+  },
+  {
+    "key": "REWARD_DINOREWARDS",
+    "value": "{0} Seconds of happy hour"
+  },
+  {
+    "key": "CLAIM",
+    "value": "Claim"
+  },
+  {
+    "key": "ACHIEVEMENT_TITLE",
+    "value": "Get 5 girls of level {0}"
+  },
+  {
+    "key": "DAILYMISSION_MERGE",
+    "value": "Combine {0} girls"
+  },
+  {
+    "key": "DAILYMISSION_PURCHASE",
+    "value": "Hire {0} girls"
+  },
+  {
+    "key": "UNLOCK_SPIN",
+    "value": "You have unlocked Chests"
+  },
+  {
+    "key": "UNLOCK_MISSIONS",
+    "value": "You have unlocked quests"
+  },
+  {
+    "key": "UNLOCK_CUSTOMIZE",
+    "value": "You have unlocked customize"
+  },
+  {
+    "key": "PROFILE_EXTRAS_1",
+    "value": "Increased Earnings"
+  },
+  {
+    "key": "PROFILE_EXTRAS_2",
+    "value": "Discount in Contracts"
+  },
+  {
+    "key": "PROFILE_EXTRAS_3",
+    "value": "Client Speed"
+  },
+  {
+    "key": "PROFILE_EXTRAS_4",
+    "value": "Passive Earnings"
+  },
+  {
+    "key": "LOCKED_EXPOSITOR",
+    "value": "You have not unlocked this table yet"
+  },
+  {
+    "key": "SAVE",
+    "value": "SAVE"
+  },
+  {
+    "key": "NAMESWAP",
+    "value": "CHANGE NAME"
+  },
+  {
+    "key": "NAMESWAP_INFO",
+    "value": "Write your name"
+  },
+  {
+    "key": "GALLERY",
+    "value": "GALLERY"
+  },
+  {
+    "key": "TABLES",
+    "value": "TABLES"
+  },
+  {
+    "key": "SEATS",
+    "value": "SEATS"
+  },
+  {
+    "key": "FRAMES",
+    "value": "FRAMES"
+  },
+  {
+    "key": "GROUNDS",
+    "value": "GROUNDS"
+  },
+  {
+    "key": "COMING_SOON",
+    "value": "Coming Soon"
+  },
+  {
+    "key": "EQUIP",
+    "value": "Equip"
+  },
+  {
+    "key": "UNLOCK_CELL",
+    "value": "New Seats!"
+  },
+  {
+    "key": "UNLOCK_EXPOSITOR",
+    "value": "New Tables!"
+  },
+  {
+    "key": "UNLOCK_GROUND",
+    "value": "New Ground!"
+  },
+  {
+    "key": "UNLOCK_FRAME",
+    "value": "New Frame!"
+  },
+  {
+    "key": "ADVANTAGES",
+    "value": "ADVANTAGES*"
+  },
+  {
+    "key": "DAILYGEMS",
+    "value": "Daily Gems"
+  },
+  {
+    "key": "DAILYSPEEDUP",
+    "value": "Daily Speedup"
+  },
+  {
+    "key": "DAILYSPIN",
+    "value": "Daily Spin"
+  },
+  {
+    "key": "GOLDEARN",
+    "value": "Gold Earnings"
+  },
+  {
+    "key": "HIREDISCOUNT",
+    "value": "Hire Discount"
+  },
+  {
+    "key": "GETNOW",
+    "value": "Get it now!"
+  },
+  {
+    "key": "SPECIALTABLES",
+    "value": "ALL TABLES UNLOCKED"
+  },
+  {
+    "key": "MONTH",
+    "value": "*Benefits available for one month"
+  },
+  {
+    "key": "GIFTS",
+    "value": "GET 4 GIFTS NOW!"
+  },
+  {
+    "key": "OBTAIN_REWARD",
+    "value": "REWARD!"
+  },
+  {
+    "key": "INFO_PANEL",
+    "value": "INFO"
+  },
+  {
+    "key": "INFO_01",
+    "value": "Find more girls using the \"HIRE\" button."
+  },
+  {
+    "key": "INFO_02",
+    "value": "The price of the girls increases with the amount of contracts you have made of each one."
+  },
+  {
+    "key": "CONV_GALLERY_0",
+    "value": "This is the gallery, where you can see our girls' private photos."
+  },
+  {
+    "key": "CONV_GALLERY_1",
+    "value": "Come on! Lets see what Takoyaki has for you."
+  },
+  {
+    "key": "CONV_GALLERY_2",
+    "value": "When you unlock a girl you will get her first photo for free, but if you want more, you will have to pay for it."
+  },
+  {
+    "key": "CONV_GALLERY_3",
+    "value": "But today is our opening day so I will pay for the first two! Enjoy!"
+  },
+  {
+    "key": "MORE_GIRLS_ADVICE",
+    "value": "MORE GIRLS COMING SOON"
+  },
+  {
+    "key": "SELECT",
+    "value": "Select"
+  },
+  {
+    "key": "EARNINGS",
+    "value": "Earnings"
+  },
+  {
+    "key": "SPEEDX2",
+    "value": "Speed x2"
+  },
+  {
+    "key": "HAPPY_HOUR_DESCRIPTION",
+    "value": "During happy hour, clients will move twice as fast"
+  },
+  {
+    "key": "REMAINING_TIME",
+    "value": "Remaining time:"
+  },
+  {
+    "key": "PACKAGE_SHOP",
+    "value": "Packages Shop"
+  },
+  {
+    "key": "PACKAGE_0",
+    "value": "Beach Pack"
+  },
+  {
+    "key": "PACKAGE_1",
+    "value": "Forest Pack"
+  },
+  {
+    "key": "PACKAGE_2",
+    "value": "Sunday Pack"
+  },
+  {
+    "key": "PACKAGE_3",
+    "value": "Sugar Pack"
+  },
+  {
+    "key": "CONF",
+    "value": "Confirm Purchase?"
+  },
+  {
+    "key": "PACK_PURCHASE",
+    "value": "Special Pack"
+  },
+  {
+    "key": "NOTICE",
+    "value": "NOTICE"
+  },
+  {
+    "key": "QUIT_GAME",
+    "value": "Quit Game?"
+  },
+  {
+    "key": "CANCEL",
+    "value": "CANCEL"
+  },
+  {
+    "key": "CONFIRM",
+    "value": "CONFIRM"
+  },
+  {
+    "key": "NOTIFICATION_0",
+    "value": "We miss you!"
+  },
+  {
+    "key": "NOTIFICATION_1",
+    "value": "Come and collect your earnings!"
+  },
+  {
+    "key": "NOTIFICATION_2",
+    "value": "Collect your daily reward!"
+  },
+  {
+    "key": "SPINPANEL",
+    "value": "TURN THE ROULETTE!"
+  },
+  {
+    "key": "GO",
+    "value": "GO"
+  },
+  {
+    "key": "SHOPQUEST",
+    "value": "Go to shop?"
+  },
+  {
+    "key": "LOOTBOXES",
+    "value": "CHESTS"
+  },
+  {
+    "key": "OPENCHEST",
+    "value": "Open Chest"
+  },
+  {
+    "key": "LIKELY_0",
+    "value": "Character Fragment"
+  },
+  {
+    "key": "LIKELY_1",
+    "value": "Customization Fragment"
+  },
+  {
+    "key": "LIKELY_2",
+    "value": "Skin Fragment"
+  },
+  {
+    "key": "LIKELY_3",
+    "value": "Tavern Music"
+  },
+  {
+    "key": "LOOTINFO",
+    "value": "All boxes can contain extra items such as Gold, Gems and other Gifts"
+  },
+  {
+    "key": "OPENBOX_1",
+    "value": "OPEN PURPLE BOX"
+  },
+  {
+    "key": "OPENBOX_2",
+    "value": "OPEN GOLDEN BOX"
+  },
+  {
+    "key": "BASIC",
+    "value": "BASIC"
+  },
+  {
+    "key": "SKINS",
+    "value": "Skins"
+  },
+  {
+    "key": "ANIMATIONS",
+    "value": "ANIMATIONS"
+  },
+  {
+    "key": "SKINSANDANIMATIONS",
+    "value": "Animations will be released soon"
+  },
+  {
+    "key": "NEWS",
+    "value": "NEWS"
+  },
+  {
+    "key": "FREECUSTOMIZEREWARD",
+    "value": "Free Customize Reward"
+  },
+  {
+    "key": "CHOOSEFREECUSTOMIZATIONPACKAGE",
+    "value": "Choose your FREE Customization Package"
+  },
+  {
+    "key": "UNLOCKFREEPACKAGE",
+    "value": "Unlock this package for free?"
+  },
+  {
+    "key": "CHESTTYPE_0",
+    "value": "Common Chest"
+  },
+  {
+    "key": "CHESTTYPE_1",
+    "value": "Uncommon Chest"
+  },
+  {
+    "key": "CHESTTYPE_2",
+    "value": "Epic Chest"
+  },
+  {
+    "key": "CHESTTYPE_3",
+    "value": "Legendary Chest"
+  },
+  {
+    "key": "FRAGMENTS_AVG",
+    "value": "Fragments Average"
+  },
+  {
+    "key": "CLAIMED",
+    "value": "Claimed"
+  },
+  {
+    "key": "OPEN_CHEST",
+    "value": "Open Chest"
+  },
+  {
+    "key": "GIRLS",
+    "value": "Girls"
+  },
+  {
+    "key": "COINS",
+    "value": "Coins"
+  },
+  {
+    "key": "GEMS",
+    "value": "Gems"
+  },
+  {
+    "key": "POSSIBLE_REWARDS",
+    "value": "Possible Rewards"
+  },
+  {
+    "key": "REWARDS_AMOUNT",
+    "value": "Rewards Amount"
+  }
+]

@@ -1,0 +1,141 @@
+Nutaku Game Platform Android SDK Change Log
+=========================================
+
+Version 2.3.0 - 2019/04/18
+ - Unity: Replaced the usage of HttpWebRequest with UnityWebRequest. Apps can now be built using .NET 4.x!
+ - Unity: Removed UNITY_WEBGL compiler condition from SandboxLoginView.cs.
+ - Unity: Fixed a SandboxLoginView issue whereby if the AutoLogin token was expired, the login flow hanged in Unity Editor.
+ - Native: Toast notifications for payment events have been added to the Sample Application (except destroy event, so it would not be annoying).
+
+ - Steps for upgrading from v2.2.0 SDK version to 2.3.0:
+   - Native: No special steps required. Just update the AAR file.
+   - Unity: As usual, when performing the import, feel free to deselect the import of AndroidManifest.xml and nutaku_game_configuration.xml, so you don't have to reconfigure those files from scratch.
+   - Unity: You will have to rework your RestApi calls, since they now use callbacks rather than being synchronous. Examples can be found in TestUIController.cs or in the online documentation.
+
+
+Version 2.2.0 - 2019/01/30
+ - Added the languagesSpoken field to the People object to be retrieved from the People API.
+ - Added the Logout feature to the Nutaku Drawer menu, in 2 variants: Logout and Exit and Logout and Restart. They can also be triggered via code, via logoutAndExit and logoutAndRestart methods.
+ - Native: The makeRequest feature is now also usable for Native SDK.
+ - Unity: Removed the dependency on UniRx library, allowing developers to implement their own retry and async mechanisms.
+ - Unity: Removed the usage of Linq to avoid performance issues caused by Unity compiler.
+ - Unity: Moved all Nutaku scripts into the Plugins folder to avoid unnecessary recompilation on every build.
+ - Unity: Made the Navigation Drawer prefab more lightweight, by removing animations and complex input calculations.
+
+ - Steps for upgrading from v2.1.x SDK version to 2.2.0:
+   - Native: No special steps required. Just update the AAR file.
+   - Unity: Because the Nutaku script folder change, it is recommended to delete all the files from the previous SDK before you import the new unitypackage to avoid duplicates (except AndroidManifest.xml and nutaku_game_configuration.xml, because they are in the same place and nothing changed about them).
+   - Unity: If you use the Navigation Drawer, you will have to re-import it.
+   - Unity: Because of the removal of UniRx, you will have to change the way you make calls to things like RestApi class. The biggest change is for the payment feature, where you will need to add your result processing as a delegate function. Documentation has been updated to reflect the new system: https://nutakudoc.atlassian.net/wiki/spaces/ND/pages/23887923/Nutaku+Game+Platform+REST+API+Unity+SDK
+   - Unity: Also because of the removal of UniRx, it means that the API requests are no longer async, nor do they have a retry mechanism anymore. Feel free to add such mechanisms to these requests where you feel it's important.
+   - Unity: Note that calling Nutaku.Unity.SdkPlugin.OpenPaymentView from outside of the main thread might not work. If you encounter this, you need to move the call to the main thread and wait there (you can use coroutines) until Nutaku.Unity.RestApiHelper.Request.PostPayment returns.
+   - Unity: If your game code depends on UniRx (not just for the SDK), you can keep the UniRx folder from the previous SDK, but we recommend downloading a more recent version as best practice.
+
+
+Version 2.1.1 - 2018/10/18
+ - Fixed a new crash on devices running on older Android OS due to Google not adding proper support (or compatibility descriptors) to their new PackageInfo.getLongVersionCode() function.
+
+Version 2.1.0 - 2018/10/16
+ - The SDK now targets/builds for Android P (API 28). IMPORTANT: If your game has other dependencies that are not yet compatible with API 28, you might have to keep using Nutaku SDK 2.0.0 until they are updated, or look into getting rid of those dependencies.
+ - Fixed an issue that was causing the Cancel callback result to be received for Successfully completed payments if the device's back button was used during the payment flow (usualy happens when buying extra gold to afford the item).
+ - Replaced the static loading spinner from the starting screen with informative text and a button that allows users to re-launch the web browser login, in case they closed it. Also added workaround information for the people that are getting the blank login page.
+ - Implemented the APK auto-update feature - if new APK is available, user gets a pop-up which can download and install the latest APK if the user accepts.
+ - The oauth-signpost library is no longer referenced, because it was not compatible with API 28. The features that the SDK was using are now part of the SDK itself.
+ - Switched from using "org.apache.http" library to "cz.msebera.android.httpclient" because the former was completely deprecated in API 28.
+ - Updated all Nutaku API endpoints and Web URLs to be accessed via https.
+ - Replaced the singular use of Jsonic library with Gson, so only Gson is used across the SDK.
+ - Unity: Fixed an issue that was causing request failures in Unity Editor if .NET Framework 4.x was used for compiling (Unity 2018). Note that the SDK is still not ready to be run on an actual device due to other .NET FW 4.x issues.
+ - Unity: Added UniRx namespace to all IObservable objects so it won't cause ambiguity with System namespace for developers using Unity 2018.
+ - Unity: Upgraded support-v4 library to support-v4-28.0.0 and included support-compat-28.0.0.aar (because support-v4-28.0.0 is now only an aar template with references).
+ - Unity: Increased the level from warning to error for the debug log messages that say the Nutaku Navigation Drawer menu items only function when running on an actual device. This way, the buttons won't appear non-functional to developers that have console warnings disabled in Editor.
+ - Unity: Set the Navigation Drawer prefab's Canvas Scaler to "Scale with Screen Size" (feel free to adjust the "reference resolution" setting for the best fit in your game) and the "Menu Button" inside it to native size at 33% scale.
+ - Native: The included Sample app comes pre-configured with the MenuButtonActivity for better discoverability of the Nutaku Drawer menu feature.
+ - Native: Added environment name to the top of the MenuButtonActivity in the Sample app.
+ - Native: com.android.support:design library is no longer used.
+ - Reworked the Nutaku Drawer for Native variant to make it more lightweight and reduce library dependencies that were bleeding into the Unity variant. A side-effect is that the swipe control scheme had to be removed, at least for now.
+ - Added one retry attempt to the API request made during SDK Initialization.
+
+ - Steps for upgrading from v2.0.0 SDK version to 2.1.x:
+   - Unity: Prior to importing the new unitypackage, delete all JAR and AAR files from the root of \Assets\Plugins\Android (the ones that came with previous Nutaku SDKs). You should only keep the res folder and the manifest, plus any libraries that did not come with Nutaku SDK.
+   - Unity: When performing the import, feel free to deselect the import of AndroidManifest.xml and nutaku_game_configuration.xml, so you don't have to reconfigure those files from scratch. You should still update the targetSdkVersion from your manifest to 28, to get rid of one of the build warnings, of course.
+   - Native: If you used the Nutaku Navigation Drawer feature before, you will have to implement the new and simplified feature, like the Sample application does using activity_menu_button.xml and main_contents_with_menu_button.xml.
+
+
+Version 2.0.0 - 2018/08/14
+ - The Native SDK (and the AAR files used by Unity) are now built using compileSdkVersion=27, buildToolsVersion=27.0.3. Gradle was also upgraded from 2.2 to 4.4.
+ - minSdkVersion is now 19 (Android 4.4 KitKat).
+ - Removed dependency on com.android.support:appcompat-v7 library.
+ - Upgraded com.android.support:design library to v27.1.1.
+ - Unity: upgraded support-v4 library to support-v4-24.1.1 (and now included in aar form, instead of jar).
+ - Removed "android.permission.READ_PHONE_STATE" and "android.permission.WRITE_EXTERNAL_STORAGE" from the default Unity SDK configuration. They were asking users to allow the app to make phone calls and to change their Photo Library, for no reason.
+ - Renamed all instances of "dmmgp" to "nutaku" and from "Dmmgp" to "Nutaku" (file paths, file names, class paths, class names, variables, etc) for consistency and to avoid integration confusion.
+ - Native: Merged com.nutaku.lib (the previous com.dmmgp.lib) classpath into com.nutaku.game.sdk to avoid having to find in which of them is the feature you're looking for.
+ - Native: The included Sample Application now actually compiles and runs (obviously, you still have to configure nutaku_game_configuration.xml with values specific to your game to become usable). IMPORTANT: after Android studio installs the gradle files to the sample, it might still throw errors about the Android SDK missing even if your environment does have it configured - it is an IDE issue and you fix it by closing and opening the solution, then perform "File->Sync project with gradle files".
+ - Updated the Nutaku logo to reflect the recent redesign.
+ - Unity: Added an X button to the top-right corner of the Nutaku Drawer Menu as an alternative way to close the menu, especially when not using Swipe mode on certain screen sizes that prevent an easy outside tap.
+ - Fixed grammar issue in the "swipe pop-up hint" image for the Nutaku Drawer.
+ - Translated all Japanese text and comments to English.
+ - Unity: Changed the field hint for the UnityEditor Sandbox login view from "email" to "Sandbox username" to avoid confusion.
+ - Native: Removed the NativeSDK-only "Nutaku Action Bar" feature (the top navigation bar). The less intrusive Nutaku Navigation Drawer (which is also on Unity variant) remains supported.
+ - Removed the now obsolete "@style/DmmgpToolbarTheme" and "@style/DmmgpActionbarTheme". "@style/AppTheme" is now used.
+ - Removed unused classes, methods and resources.
+ - Event listeners NutakuEventPayment, NutakuEventGold and NutakuEventSplash that were receiving "Map<String, Object>..." (var args), now accept "Map<String, Object>" (just one). There was no scenario in which more than one was used.
+ - Native: Fixed typo in initalizeNutakuDrawerMenu()/initalizeDmmgpDrawerMenu function name.
+
+ - Steps for upgrading from a previous SDK version to 2.0.0:
+   - replace all strings in your own code and manifest from "dmmgp" to "nutaku" and from "Dmmgp" to "Nutaku".
+   - Native: replace any "com.nutaku.lib" (or com.dmmgp.lib) to "com.nutaku.game.sdk" classpaths/imports from your game code and manifest
+   - Unity: prior to importing the new unitypackage, delete all JAR and AAR files from the root of \Assets\Plugins\Android (the ones that came with previous Nutaku SDKs): android-support-v4.jar, appcompat-v7-*.jar and Dmmgp*.aar.
+   - Unity: for the AndroidManifest.xml file, you can choose between overwriting it with the one inside the new SDK and then re-apply your game-specific configuration inside it, or you can choose to keep your existing manifest but you will have to perform the following steps instead.
+   - Native (and Unity, if you kept the previous manifest): Remove the obsolete activities from the Manifest: *MenuListActivity and *SupportListActivity (* stands for Dmmgp or Nutaku, depending if you performed the replace step or not).
+   - Native (and Unity, if you kept the previous manifest): Replace all "@style/*ToolbarTheme" and "@style/*ActionbarTheme" theme values from the manifest to "@style/AppTheme" (* stands for Dmmgp or Nutaku, depending if you performed the replace step or not).
+   - Unity (if you kept the manifest): remove "android.permission.READ_PHONE_STATE" and "android.permission.WRITE_EXTERNAL_STORAGE", unless your game happens to actually need them, of course.
+   - Unity (if you kept the manifest): remove the activities UnityPlayerProxyActivity and UnityPlayerNativeActivity. Only UnityPlayerActivity should remain from the UnityPlayer group.
+   - Unity (if you kept the manifest): replace com.nutaku.lib (or com.dmmgp.lib) to com.nutaku.game.sdk.
+   - If you've used any Nutaku event listeners that accepted Map<String, Object> vararg-style parameters, you will have to adjust them so they take only one Map<String, Object>.
+   - Native: rename initalize*DrawerMenu to initialize*DrawerMenu in your function call if you use the drawer (* stands for Dmmgp or Nutaku, depending if you performed the replace step or not).
+   - If your game used com.android.support:appcompat-v7 library that came with the previous SDK, you will have to add a version of your choice to the project yourself.
+
+**************************
+Version 1.4.0 - 2018/06/22
+ - Fixed bug where the client was ignoring the updated oauth tokens from the server, resulting in 401 errors.
+ - Refactored and merged the AAR libraries (the DmmgpCommonLib is now a blank dummy. You may remove it from the project entirely).
+ - Unity SDK: Removed redundant transparency computation in Prefabs/Navigation Drawer/Glass Pane.
+ - Unity SDK: The SDK is now built with 2017.1.0f3. Unity 5.x is no longer officially supported.
+
+**************************
+Version 1.3.0 - 2018/01/31
+ - Change login flow
+ - Add a link to Payment Support
+ - Bug fix when no network connection
+
+**************************
+Version 1.2.8 - 2017/12/20
+ - Bug fix for Back button event on Item Cart
+
+**************************
+Version 1.2.7 - 2017/12/07
+ - Support Unity 2017.1
+
+**************************
+Version 1.2.6 - 2017/09/22
+ - Replace Logo for Nutaku.net
+ - Add notes of Facebook login
+
+**************************
+Version 1.2.5 - 2017/07/04
+ - refactored code
+
+**************************
+Version 1.2.4 - 2017/05/19
+ - Bug fix for Android7
+ - Set targetSdkVersion to 24
+
+**************************
+Version 1.2.3 - 2017/02/14
+ - Bug fix for initialization error
+ - Change connection destination to SandBox
+
+**************************
+Version 1.0.0 - 2016/09/01
+ - Initial release

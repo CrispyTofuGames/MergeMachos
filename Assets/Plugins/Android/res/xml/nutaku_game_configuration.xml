@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+    <appId>17473</appId>
+    <gameName>tavern-of-sins</gameName>
+    <consumerKey>2826mbRujMoKIye4</consumerKey>
+    <consumerSecret>d3Ip@k8rN5dVQL8HJZDY1ic$0sIvUOoX</consumerSecret>
+    <mainActivity>com.nutaku.unity.UnityPlayerActivity</mainActivity>
+    <environment>sandbox</environment>
+</properties>
