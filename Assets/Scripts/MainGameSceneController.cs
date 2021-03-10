@@ -102,6 +102,7 @@ public class MainGameSceneController : MonoBehaviour
 
     public void CreateDinosaur(int cellIndex, int dinoType)
     {
+        print(dinoType);
         GameObject dino = Instantiate(_dinoPrefabs[dinoType], _cellManager.GetCellPosition(cellIndex), Quaternion.identity);
         DinosaurInstance dinoInst = dino.GetComponent<DinosaurInstance>();
         dinoInst.SetCell(cellIndex);

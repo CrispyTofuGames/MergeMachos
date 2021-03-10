@@ -150,59 +150,59 @@ public class UserData
         _groundSkinsFragments = new int[UserDataValues.groundSkins];
         _lootBoxes = new int[4];
         _checkedExperience = false;
-    //    //Poner Para Desbloquear TODO
-    //    _biggestDino = 30;
-    //    _experience = 10000;
-    //    _softCoins[0] = 999;
-    //    _softCoins[1] = 999;
-    //    _softCoins[2] = 999;
-    //    _softCoins[3] = 999;
-    //    _softCoins[4] = 999;
-    //    _softCoins[5] = 999;
-    //    _hardCoins = 1000;
-    //    _unlockedCells = 12;
-    //    _unlockedExpositors = 10;
-    //    for (int i = 0; i < _cellSkins.Length; i++)
-    //    {
-    //        _cellSkins[i] = true;
-    //    }
-    //    for (int i = 0; i < _expositorSkins.Length; i++)
-    //    {
-    //        _expositorSkins[i] = true;
-    //    }
-    //    for (int i = 0; i < _groundSkins.Length; i++)
-    //    {
-    //        _groundSkins[i] = true;
-    //    }
-    //    for (int i = 0; i < _framesSkins.Length; i++)
-    //    {
-    //        _framesSkins[i] = true;
-    //    }
-    //    for (int i = 0; i < _skins.Length; i++)
-    //    {
+        //Poner Para Desbloquear TODO
+        _biggestDino = 30;
+        _experience = 10000;
+        _softCoins[0] = 999;
+        _softCoins[1] = 999;
+        _softCoins[2] = 999;
+        _softCoins[3] = 999;
+        _softCoins[4] = 999;
+        _softCoins[5] = 999;
+        _hardCoins = 1000;
+        _unlockedCells = 12;
+        _unlockedExpositors = 10;
+        for (int i = 0; i < _cellSkins.Length; i++)
+        {
+            _cellSkins[i] = true;
+        }
+        for (int i = 0; i < _expositorSkins.Length; i++)
+        {
+            _expositorSkins[i] = true;
+        }
+        for (int i = 0; i < _groundSkins.Length; i++)
+        {
+            _groundSkins[i] = true;
+        }
+        for (int i = 0; i < _framesSkins.Length; i++)
+        {
+            _framesSkins[i] = true;
+        }
+        for (int i = 0; i < _skins.Length; i++)
+        {
 
-    //        if (i % 4 != 0 && i % 4 != 2)
-    //        {
-    //            _skins[i] = false;
-    //        }
-    //        else
-    //        {
-    //            _skins[i] = true;
-    //        }
-    //    }
+            if (i % 4 != 0 && i % 4 != 2)
+            {
+                _skins[i] = false;
+            }
+            else
+            {
+                _skins[i] = true;
+            }
+        }
 
-    //    //for (int i = 0; i < _specialCards.Length; i++)
-    //    //{
-    //    //    _specialCards[i] = true;
-    //    //}
-    //    for (int i = 0; i < _tutorialCompleted.Length; i++)
-    //    {
-    //        _tutorialCompleted[i] = true;
-    //    }
+        //for (int i = 0; i < _specialCards.Length; i++)
+        //{
+        //    _specialCards[i] = true;
+        //}
+        for (int i = 0; i < _tutorialCompleted.Length; i++)
+        {
+            _tutorialCompleted[i] = true;
+        }
 
-    //    _haswatchedGalleryTutorial = true;
-    //    _haswatchedGalleryTutorial2 = true;
-    
+        _haswatchedGalleryTutorial = true;
+        _haswatchedGalleryTutorial2 = true;
+
     }
 
     public static class UserDataValues
