@@ -151,7 +151,7 @@ public class UserData
         _lootBoxes = new int[4];
         _checkedExperience = false;
         //Poner Para Desbloquear TODO
-        _biggestDino = 30;
+        _biggestDino = 13;
         _experience = 10000;
         _softCoins[0] = 999;
         _softCoins[1] = 999;
@@ -180,15 +180,7 @@ public class UserData
         }
         for (int i = 0; i < _skins.Length; i++)
         {
-
-            if (i % 4 != 0 && i % 4 != 2)
-            {
-                _skins[i] = false;
-            }
-            else
-            {
-                _skins[i] = true;
-            }
+            _skins[i] = true;
         }
 
         //for (int i = 0; i < _specialCards.Length; i++)
