@@ -29,13 +29,13 @@ public class DayCareManager : MonoBehaviour
     Transform _panelParent;
     List<PurchaseDinoPanel> _dinoPanelManagers;
     bool watchedVideo = false;
-    int[] gemCost = {4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 45, 50, 55, 60, 66, 72, 78, 86, 94, 102, 110, 120, 130, 140, 150, 165, 180, 200, 220, 240, 260};
+    int[] gemCost = {4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 45, 50, 55, 60, 66, 72, 78, 86, 94, 102, 110, 120, 130, 140, 150, 165, 180, 200, 220, 240, 260, 280, 300, 320, 340};
     PanelManager _panelManager;
     int smallGemCost, bigGemCost;
 
     public enum PurchaseButtonType {SoftCoins, Hardcoins, Ad};
 
-    string[] dinoNames = { "Shori", "Runa", "Sooru", "Dylon", "Frenkie", "Tobio", "Tulio"};
+    string[] dinoNames = { "Takoyaki", "Catara", "Cuticorn", "Suky", "Shiva", "Danny", "Mica", "Meku", "Eri", "Pinky", "Reny", "Mury","Himiko","Rin", "Vanilla", "Maddie", "Flanny", "Haruki", "April & May"};
 
     int _fastPurchaseDinoType = 0;
     private void Awake()

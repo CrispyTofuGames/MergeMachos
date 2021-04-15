@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: CrispyTofu
-  productName: Dicks club
+  productName: Tavern of Sins
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.2.12
+  bundleVersion: 1.0.3.03
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -167,12 +167,12 @@ PlayerSettings:
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
-  androidSupportedAspectRatio: 2
-  androidMaxAspectRatio: 16.9
+  androidSupportedAspectRatio: 1
+  androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.crispytofu.tavernofsins
   buildNumber: {}
-  AndroidBundleVersionCode: 25
+  AndroidBundleVersionCode: 33
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -668,7 +668,7 @@ PlayerSettings:
     type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   blurSplashScreenBackground: 1
-  spritePackerPolicy: 
+  spritePackerPolicy: DefaultPackerPolicy
   webGLMemorySize: 256
   webGLExceptionSupport: 1
   webGLNameFilesAsHashes: 0
@@ -770,10 +770,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: cddc68f1-b242-4596-831f-d93ec58a8f11
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: MergeSaurus
-  organizationId: kaiju-bits
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

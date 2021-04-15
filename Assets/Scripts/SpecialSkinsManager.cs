@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public static class SpecialSkinsManager
+public static class SpecialSkinsManager 
 {
-    public static SpecialSkin[] _specialSkins = new SpecialSkin[] { };
+    public static SpecialSkin[] _specialSkins/*  = new SpecialSkin[]{new SpecialSkin(4,0, "Christmas Shiva")}*/;
 }
 public class SpecialSkin
 {

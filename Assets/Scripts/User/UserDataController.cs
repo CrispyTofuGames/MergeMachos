@@ -323,21 +323,21 @@ public class UserDataController : MonoBehaviour
         switch (GetCharacterLevel(character))
         {
             case 0:
-                if (GetCharacterFragments(character) == GameData.characterFragmentCapsByLevel[0])
+                if (GetCharacterFragments(character) >= GameData.characterFragmentCapsByLevel[0])
                 {
                     canLevelUp = true;
                 }
                 break;
 
             case 1:
-                if (GetCharacterFragments(character) == GameData.characterFragmentCapsByLevel[1])
+                if (GetCharacterFragments(character) >= GameData.characterFragmentCapsByLevel[1])
                 {
                     canLevelUp = true;
                 }
                 break;
 
             case 2:
-                if (GetCharacterFragments(character) == GameData.characterFragmentCapsByLevel[2])
+                if (GetCharacterFragments(character) >= GameData.characterFragmentCapsByLevel[2])
                 {
                     canLevelUp = true;
                 }

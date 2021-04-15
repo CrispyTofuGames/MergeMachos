@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShopManager : MonoBehaviour
 {
@@ -21,9 +22,13 @@ public class ShopManager : MonoBehaviour
     RectTransform _gridRectTransform;
     bool isOpen = false;
     [SerializeField]
-    GameObject _confirmPurchase, _unlockedOfferPanel, _purchaseNull;
+    GameObject _confirmPurchase, _purchaseNull;
     NutakuPurchaseController _nutakuPurchaseController;
     int _specialOfferIndex = 1;
+    [SerializeField] TextMeshProUGUI _confirmPriceTx;
+    int _confirmIndex;
+    ShopChest _chestInstance;
+    bool _isChest;
 
     public void OpenShop()
     {
@@ -40,7 +45,6 @@ public class ShopManager : MonoBehaviour
                 RefreshCoinPanels();
                 if (UserDataController.CheckSpecialOffer())
                 {
-                    _unlockedOfferPanel.SetActive(true);
                     _purchaseNull.SetActive(false);
                 }
             }
@@ -72,10 +76,8 @@ public class ShopManager : MonoBehaviour
         }
         else
         {
-            if (_economyManager.SpendHardCoins(_coinGemCost[index]))
-            {
-                _rewardManager.EarnSoftCoin(_coinRewardSeconds[index]);
-            }
+            _confirmIndex = index;
+            OpenConfirmPanel(_coinGemCost[index], null);
         }
     }
 
@@ -110,7 +112,6 @@ public class ShopManager : MonoBehaviour
             if(packIndex == _specialOfferIndex) //Por si coincidiese que promocionamos un pack que tambien esta en la tienda y el jugador lo ha comprado
             {
                 UserDataController.PurchaseSpecialOffer(_specialOfferIndex);
-                _unlockedOfferPanel.SetActive(true);
                 _purchaseNull.SetActive(false);
             }
         }
@@ -125,7 +126,6 @@ public class ShopManager : MonoBehaviour
             _rewardManager.EarnCustomizeItem(_specialOfferIndex, 0);
             _rewardManager.EarnCustomizeItem(_specialOfferIndex, 1);
             _rewardManager.EarnCustomizeItem(_specialOfferIndex, 2);
-            _unlockedOfferPanel.SetActive(true);
             _purchaseNull.SetActive(false);
             CloseConfirmPurchase();
         }
@@ -134,5 +134,36 @@ public class ShopManager : MonoBehaviour
     public void CloseConfirmPurchase()
     {
         _confirmPurchase.SetActive(false);
+    }
+
+    public void OpenConfirmPanel(int gemCost, ShopChest chestInstance)
+    {
+        _confirmPriceTx.text = gemCost.ToString();
+        _chestInstance = chestInstance;
+        _confirmPurchase.SetActive(true);
+        if(chestInstance == null)
+        {
+            _isChest = false;
+        }
+        else
+        {
+            _isChest = true;
+        }
+    }
+
+    public void ConfirmPurchase()
+    {
+        if (_isChest)
+        {
+            _chestInstance.PurchaseChest();
+        }
+        else
+        {
+            if (_economyManager.SpendHardCoins(_coinGemCost[_confirmIndex]))
+            {
+                _rewardManager.EarnSoftCoin(_coinRewardSeconds[_confirmIndex]);
+            }           
+        }
+        CloseConfirmPurchase();
     }
 }

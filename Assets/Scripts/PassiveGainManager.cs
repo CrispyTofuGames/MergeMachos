@@ -46,7 +46,21 @@ public class PassiveGainManager : MonoBehaviour
         _economyManager = FindObjectOfType<EconomyManager>();
         _rewardManager = FindObjectOfType<RewardManager>();
         yield return null;
-        CheckLastSaveTime();
+        if (PlayerPrefs.HasKey("ComeFromAnimation"))
+        {
+            if (PlayerPrefs.GetInt("ComeFromAnimation") == 0)
+            {
+                CheckLastSaveTime();
+            }
+            else
+            {
+                PlayerPrefs.SetInt("ComeFromAnimation", 0);
+            }
+        }
+        else
+        {
+            CheckLastSaveTime();
+        }
     }
 
     public void CheckLastSaveTime()

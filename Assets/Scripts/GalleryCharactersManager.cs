@@ -20,13 +20,13 @@ public class GalleryCharactersManager : MonoBehaviour
     public void LoadCharacterConfig(int charIndex)
     {
         List<int> _characterSkins = new List<int>();
-        for(int i=0; i< SpecialSkinsManager._specialSkins.Length; i++)
-        {
-            if (SpecialSkinsManager._specialSkins[i]._character == charIndex)
-            {
-                _characterSkins.Add(i);
-            }
-        }
+        //for(int i=0; i< SpecialSkinsManager._specialSkins.Length; i++)
+        //{
+        //    if (SpecialSkinsManager._specialSkins[i]._character == charIndex)
+        //    {
+        //        _characterSkins.Add(i);
+        //    }
+        //}
         for(int i = 0; i< _singleSkins.Length; i++)
         {
             if (i<_characterSkins.Count)
@@ -71,32 +71,12 @@ public class GalleryCharactersManager : MonoBehaviour
         if (mode == 0)
         {
             _basicCardsContainer.SetActive(true);
-            _basicButton.anchoredPosition = new Vector2(-275, 30);
-            _basicTx.alignment = TextAlignmentOptions.Midline;
-            _basicTx.fontSizeMax = 60f;
-
             _epicCardsContainer.SetActive(false);
-            _epicButton.anchoredPosition = new Vector2(0, 8);
-            _epicTx.alignment = TextAlignmentOptions.Top;
-            _epicTx.fontSizeMax = 50f;
         }
         else
         {
-            if (mode == 1)
-            {
-                _basicCardsContainer.SetActive(false);
-                _basicButton.anchoredPosition = new Vector2(-275, 8);
-                _basicTx.alignment = TextAlignmentOptions.Top;
-                _basicTx.fontSizeMax = 50f;
-                _epicCardsContainer.SetActive(true);
-                _epicButton.anchoredPosition = new Vector2(0, 30);
-                _epicTx.alignment = TextAlignmentOptions.Midline;
-                _epicTx.fontSizeMax = 60f;
-            }
-            else
-            {
-                GameEvents.ShowAdvice.Invoke(new GameEvents.AdviceEventData("SKINSANDANIMATIONS"));
-            }
+            _basicCardsContainer.SetActive(false);
+            _epicCardsContainer.SetActive(true);
         }
 
         for (int i = 0; i < _basicPrevPhotos.Length; i++)

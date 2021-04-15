@@ -15,7 +15,7 @@ public class CoinAdviceManager : MonoBehaviour
     }
     public void Play(GameEvents.MoneyEventData moneyEventData)
     {
-        _adviceTextGroup[_currentText].Play(moneyEventData._position + new Vector3(0, 1.5f, 0), moneyEventData._money);
+        _adviceTextGroup[_currentText].Play(moneyEventData._position + new Vector3(0.5f, 1.5f, 0), moneyEventData._money);
         _currentText++;
         _currentText = _currentText % _adviceTextGroup.Length;
     }

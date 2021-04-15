@@ -48,22 +48,20 @@ public class CardConfigurator : MonoBehaviour
         int biggestDino = UserDataController.GetBiggestDino() + 1;
         _charIndex = character;
         _foreground.enabled = false;
-        
-        if (UserDataController.IsSpecialCardUnlocked(_charIndex) &&  UserDataController.IsSkinUnlocked(_charIndex))
+
+        if (_star != null)
         {
-            if (_star != null)
+            if (UserDataController.IsSpecialCardUnlocked(_charIndex) && UserDataController.IsSkinUnlocked(_charIndex))
             {
                 _star.gameObject.SetActive(true);
             }
-        }
-        else
-        {
-            if (_star != null)
+            else
             {
                 _star.gameObject.SetActive(false);
                 ActiveShinyMode(false);
             }
         }
+
 
         //StartCoroutine(LoadSpriteFromStreamingAssets(_mainImage, "/BigDraws/" + character, UserDataController.IsSkinUnlocked(character)));
         _mainImage.sprite = Resources.Load<Sprite>("Sprites/BigDraws/" + character);

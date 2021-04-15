@@ -103,7 +103,10 @@ public class GallerySingleSkinPhotoInstance : MonoBehaviour
         _canOpenFullScreen = false;
         _galleryManager = FindObjectOfType<GalleryManager>();
         Button b = _fullScreenButton.GetComponent<Button>();
-        //b.onClick.AddListener(() => OpenSinglePhotoSkin());
+        if (!_canOpenFullScreen)
+        {
+            b.onClick.AddListener(() => OpenSinglePhotoSkin());
+        }
         _moreFragmentsButton.GetComponent<Button>().onClick.AddListener(() => BuyFragments());
         if (UserDataController.IsExtraSkinUnlocked(skin))
         {

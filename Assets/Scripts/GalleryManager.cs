@@ -26,11 +26,11 @@ public class GalleryManager : MonoBehaviour
     [SerializeField] GalleryCharactersManager _galleryCharactersManager;
     [SerializeField] GallerySingleIllustrationManager _gallerySingleIllustrationManager;
     [SerializeField] ScrollRect _scrollController;
-    [SerializeField] Button _girlsButton, _basicButton, _skinButton;
+    [SerializeField] Button _girlsButton, _basicButton, _skinButton, _animationsButton;
     [SerializeField] GameObject _swapButtonsNull;
     [SerializeField] GalleryFullModeInitializer _galleryFullModeInitializer;
     List<GameCurrency> _softCoinPrizes;
-    List<int> _hardCoinPrizes = new List<int>(){0, 0, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50 };
+    List<int> _hardCoinPrizes = new List<int>(){0, 0, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50};
     bool _canBack = false;
     bool _onePhotoOpened = false;
     bool _swapping = false;
@@ -75,7 +75,13 @@ public class GalleryManager : MonoBehaviour
             new GameCurrency(new int[] { 0, 0, 0, 500, 251}),
             new GameCurrency(new int[] { 0, 0, 0, 500, 547}),
             new GameCurrency(new int[] { 0, 0, 0, 500, 103, 1}),
-            new GameCurrency(new int[] { 0, 0, 0, 500, 256, 3})
+            new GameCurrency(new int[] { 0, 0, 0, 500, 256, 3}),
+            new GameCurrency(new int[] { 0, 0, 0, 500, 750, 6}),
+            new GameCurrency(new int[] { 0, 0, 0, 500, 250, 14}),
+            new GameCurrency(new int[] { 0, 0, 0, 500, 250, 36}),
+            new GameCurrency(new int[] { 0, 0, 0, 500, 250, 75}),
+            new GameCurrency(new int[] { 0, 0, 0, 500, 250, 164}),
+            new GameCurrency(new int[] { 0, 0, 0, 500, 250, 341})
         };
         GameEvents.DinoUp.AddListener(UnlockDinoInGallery);
     }
@@ -130,6 +136,7 @@ public class GalleryManager : MonoBehaviour
         _girlsButton.interactable = false;
         _basicButton.interactable = true;
         _skinButton.interactable = true;
+        _animationsButton.interactable = true;
 
         _onePhotoGallery.SetActive(false);
         _characterGallery.SetActive(false);
@@ -200,8 +207,7 @@ public class GalleryManager : MonoBehaviour
         _canBack = true;
     }
     public void ShowSkinFullScreen(int skinIndex)
-    {
-        
+    {   
         _currentChar = SpecialSkinsManager._specialSkins[skinIndex]._character * 4;
         _leftButton.SetActive(false);
         _rightButton.SetActive(false);
@@ -215,9 +221,11 @@ public class GalleryManager : MonoBehaviour
         //    _gallerySingleIllustrationManager.SetOnePhotoState(false);
         //}
         _faceGallery.SetActive(false);
+        _swapButtonsNull.SetActive(false);
         _girlsButton.interactable = true;
         _basicButton.interactable = true;
         _skinButton.interactable = false;
+        _animationsButton.interactable = true;
         _fullModeGallery.SetActive(false);
         _characterGallery.SetActive(false);
         _onePhotoGallery.SetActive(true);
@@ -352,6 +360,7 @@ public class GalleryManager : MonoBehaviour
                 _girlsButton.interactable = true;
                 _basicButton.interactable = false;
                 _skinButton.interactable = true;
+                _animationsButton.interactable = true;
                 _scrollController.content = _fullGalleryBasicGrid.GetComponent<RectTransform>();
                 _characterGallery.SetActive(false);
                 _faceGalleryInitializer.RefreshFaces();
@@ -380,6 +389,7 @@ public class GalleryManager : MonoBehaviour
                 _girlsButton.interactable = false;
                 _basicButton.interactable = true;
                 _skinButton.interactable = true;
+                _animationsButton.interactable = true;
                 _scrollController.content = _faceGallery.GetComponent<RectTransform>();
             }
             else
@@ -390,6 +400,7 @@ public class GalleryManager : MonoBehaviour
                 _girlsButton.interactable = true;
                 _basicButton.interactable = false;
                 _skinButton.interactable = true;
+                _animationsButton.interactable = true;
                 _scrollController.content = _fullGalleryBasicGrid.GetComponent<RectTransform>();
             }
             _characterGallery.SetActive(false);
@@ -418,6 +429,7 @@ public class GalleryManager : MonoBehaviour
         _girlsButton.interactable = false;
         _basicButton.interactable = true;
         _skinButton.interactable = true;
+        _animationsButton.interactable = true;
         _scrollController.content = _faceGallery.GetComponent<RectTransform>();
     }
 
@@ -429,11 +441,12 @@ public class GalleryManager : MonoBehaviour
         _girlsButton.interactable = true;
         _basicButton.interactable = false;
         _skinButton.interactable = true;
+        _animationsButton.interactable = true;
         _galleryFullModeInitializer.BasicMode();
         _scrollController.content = _fullGalleryBasicGrid.GetComponent<RectTransform>();
     }
 
-    public void SkinsFullButoon()
+    public void SkinsFullButton()
     {
         _fullMode = true;
         _faceGallery.SetActive(false);
@@ -441,7 +454,21 @@ public class GalleryManager : MonoBehaviour
         _girlsButton.interactable = true;
         _basicButton.interactable = true;
         _skinButton.interactable = false;
+        _animationsButton.interactable = true;
         _galleryFullModeInitializer.SkinMode();
+        _scrollController.content = _fullGallerySkinGrid.GetComponent<RectTransform>();
+    }
+
+    public void AnimationFullButton()
+    {
+        _fullMode = true;
+        _faceGallery.SetActive(false);
+        _fullModeGallery.SetActive(true);
+        _girlsButton.interactable = true;
+        _basicButton.interactable = true;
+        _skinButton.interactable = true;
+        _animationsButton.interactable = false;
+        _galleryFullModeInitializer.AnimationMode();
         _scrollController.content = _fullGallerySkinGrid.GetComponent<RectTransform>();
     }
 
@@ -455,5 +482,11 @@ public class GalleryManager : MonoBehaviour
         {
             _scrollController.content = _fullGallerySkinGrid.GetComponent<RectTransform>();
         }
+    }
+
+    public void LoadAnimatedScene(int charIndex)
+    {
+        PlayerPrefs.SetInt("AnimatedCharIndex", charIndex);
+        GameEvents.LoadScene.Invoke("AnimatedScene");
     }
 }

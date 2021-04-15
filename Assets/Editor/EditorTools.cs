@@ -18,6 +18,11 @@ public class EditorTools : MonoBehaviour
     {
         LoadScene("MainGame");
     }
+    [MenuItem("Scenes/AnimatedScene")]
+    public static void OpenAnimatedScene()
+    {
+        LoadScene("AnimatedScene");
+    }
     [MenuItem("CustomTools/ChangeToRelease")]
     public static void ChangeToRelease()
     {

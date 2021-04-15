@@ -76,12 +76,13 @@ public class GalleryFace : MonoBehaviour
                     _progressBar.SetActive(false);
                     _openCharButton.interactable = false;
                 }
-                SetLevel(UserDataController.GetCharacterLevel(character / 2));
             }
             else
             {
                 SetFragmentProgress();
             }
+            SetLevel(UserDataController.GetCharacterLevel(character / 2));
+
         }
         else
         {
@@ -94,7 +95,6 @@ public class GalleryFace : MonoBehaviour
 
     public void LevelUp()
     {
-
         if (UserDataController.CanLevelUp(_currentCharacter))
         {
             FindObjectOfType<RewardManager>().LevelUpCharacter(_currentCharacter, UserDataController.GetCharacterLevel(_currentCharacter) + 1);
@@ -125,7 +125,7 @@ public class GalleryFace : MonoBehaviour
                 _progressBar.SetActive(true);
                 int fragmentsCap = GameData.characterFragmentCapsByLevel[UserDataController.GetCharacterLevel(_currentCharacter)];
                 _fragmentsProgress.text = UserDataController.GetCharacterFragments(_currentCharacter) + "/" + fragmentsCap;
-                if (UserDataController.GetCharacterFragments(_currentCharacter) == fragmentsCap)
+                if (UserDataController.GetCharacterFragments(_currentCharacter) >= fragmentsCap)
                 {
                     _moreFragmentsButton.SetActive(false);
                     _levelUpButton.SetActive(true);

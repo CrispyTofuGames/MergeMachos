@@ -98,7 +98,13 @@ public class GallerySingleIllustrationManager : MonoBehaviour
                     {
                         g.SetActive(true);
                     }
-                    if(_currentOnePhotoIndex % 4 == 0)
+                    if (!UserDataController.IsSpecialCardUnlocked(_currentOnePhotoIndex) || !UserDataController.IsSkinUnlocked(_currentOnePhotoIndex))
+                    {
+                        _zoomDisableElements[2].SetActive(false);
+                    }
+                    //Cambios para que no aparezca la estrella tras hacer zoom
+
+                    if (_currentOnePhotoIndex % 4 == 0)
                     {
                         _leftButton.SetActive(false);
                     }

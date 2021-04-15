@@ -16,7 +16,7 @@ public class FaceGallery : MonoBehaviour
     {
         int counter = 0;
         _createdRows = new List<Transform>();
-        for (int i = 0; i < 6; i++) //6 == numero de filas
+        for (int i = 0; i < 5; i++) //< x == numero de filas
         {
             Transform t = Instantiate(_horizontalFaceGallery, transform).transform;
             t.GetChild(0).GetComponent<GalleryFace>().Init(counter, true);
