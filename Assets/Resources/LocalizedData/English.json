@@ -21,19 +21,19 @@
   },
   {
     "key": "CONV_0_2",
-    "value": "We need new girls. Try to hire our new employee!"
+    "value": "We need new boys. Try to hire our new employee!"
   },
   {
     "key": "CONV_1_0",
-    "value": "Put her to work on any available table"
+    "value": "Put him to work on any available table"
   },
   {
     "key": "CONV_2_0",
-    "value": "Touch on her to bring her back"
+    "value": "Touch on him to bring him back"
   },
   {
     "key": "CONV_3_0",
-    "value": "You can also put her on the table touching twice on the screen, try it!"
+    "value": "You can also put him on the table touching twice on the screen, try it!"
   },
   {
     "key": "CONV_4_0",
@@ -121,7 +121,7 @@
   },
   {
     "key": "UPGRADES_INFO",
-    "value": "Exchange girld for upgrades"
+    "value": "Exchange boys for upgrades"
   },
   {
     "key": "UPGRADES_BUTTON",
@@ -257,7 +257,7 @@
   },
   {
     "key": "ADVICE_NOT_UNLOCKED",
-    "value": "This girl is not available"
+    "value": "This boy is not available"
   },
   {
     "key": "ADVICE_NOHARDCOINS",
@@ -289,7 +289,7 @@
   },
   {
     "key": "UPGRADES_INFO_PANEL_1",
-    "value": "Girls' earnings"
+    "value": "Boys' earnings"
   },
   {
     "key": "UPGRADES_INFO_PANEL_2",
@@ -325,15 +325,15 @@
   },
   {
     "key": "ACHIEVEMENT_TITLE",
-    "value": "Get 5 girls of level {0}"
+    "value": "Get 5 boys of level {0}"
   },
   {
     "key": "DAILYMISSION_MERGE",
-    "value": "Combine {0} girls"
+    "value": "Combine {0} boys"
   },
   {
     "key": "DAILYMISSION_PURCHASE",
-    "value": "Hire {0} girls"
+    "value": "Hire {0} boys"
   },
   {
     "key": "UNLOCK_SPIN",
@@ -341,11 +341,11 @@
   },
   {
     "key": "UNLOCK_MISSIONS",
-    "value": "You have unlocked quests"
+    "value": "You have unlocked Quests"
   },
   {
     "key": "UNLOCK_CUSTOMIZE",
-    "value": "You have unlocked customize"
+    "value": "You have unlocked Customize"
   },
   {
     "key": "PROFILE_EXTRAS_1",
@@ -473,23 +473,23 @@
   },
   {
     "key": "INFO_01",
-    "value": "Find more girls using the \"HIRE\" button."
+    "value": "Find more boys using the \"HIRE\" button."
   },
   {
     "key": "INFO_02",
-    "value": "The price of the girls increases with the amount of contracts you have made of each one."
+    "value": "The price of the boys increases with the amount of contracts you have made of each one."
   },
   {
     "key": "CONV_GALLERY_0",
-    "value": "This is the gallery, where you can see our girls' private photos."
+    "value": "This is the gallery, where you can see our boys' private photos."
   },
   {
     "key": "CONV_GALLERY_1",
-    "value": "Come on! Lets see what Takoyaki has for you."
+    "value": "Come on! Lets see what Shori has for you."
   },
   {
     "key": "CONV_GALLERY_2",
-    "value": "When you unlock a girl you will get her first photo for free, but if you want more, you will have to pay for it."
+    "value": "When you unlock a boy you will get his first photo for free, but if you want more, you will have to pay for it."
   },
   {
     "key": "CONV_GALLERY_3",
@@ -497,7 +497,7 @@
   },
   {
     "key": "MORE_GIRLS_ADVICE",
-    "value": "MORE GIRLS COMING SOON"
+    "value": "MORE BOYS COMING SOON"
   },
   {
     "key": "SELECT",
@@ -637,7 +637,7 @@
   },
   {
     "key": "SKINSANDANIMATIONS",
-    "value": "Animations will be released soon"
+    "value": "More animations soon"
   },
   {
     "key": "NEWS",
@@ -685,7 +685,7 @@
   },
   {
     "key": "GIRLS",
-    "value": "Girls"
+    "value": "Boys"
   },
   {
     "key": "COINS",
@@ -702,5 +702,29 @@
   {
     "key": "REWARDS_AMOUNT",
     "value": "Rewards Amount"
+  },
+  {
+    "key": "CONFIRM_PURCHASE",
+    "value": "Confirm Purchase?"
+  },
+  {
+    "key": "PLEASURE",
+    "value": "Pleasure"
+  },
+  {
+    "key": "CUM_ZONE",
+    "value": "Cum Zone"
+  },
+  {
+    "key": "TOUCH_AVG",
+    "value": "Touch Average"
+  },
+  {
+    "key": "BACK_TO_TAVERN",
+    "value": "Back to Tavern"
+  },
+  {
+    "key": "GET_STAR",
+    "value": "Requires:"
   }
 ]
