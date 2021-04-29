@@ -321,7 +321,7 @@ public class LootBoxController : MonoBehaviour
         {
             fragmentsByTypes.Add(1);
         }
-        List<lootRewardTypes> rewardTypes = new List<lootRewardTypes>() { lootRewardTypes.character, lootRewardTypes.skin, lootRewardTypes.customize, lootRewardTypes.softCoins, lootRewardTypes.hardCoins };
+        List<lootRewardTypes> rewardTypes = new List<lootRewardTypes>() { lootRewardTypes.character, lootRewardTypes.customize, lootRewardTypes.softCoins, lootRewardTypes.hardCoins };
         List<lootRewardTypes> finalRewards = new List<lootRewardTypes>();
         for(int i = 0; i< numberOfRewards; i++)
         {

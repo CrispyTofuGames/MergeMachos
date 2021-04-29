@@ -25,10 +25,9 @@ public class NutakuPurchaseController : MonoBehaviour
 
     public void RequestPayment(int gemPackIndex, int price, int gemsQuantity)
     {
-
         PlayerPrefs.SetInt("LastPurchasePrice", price);
         Payment requestPayment = new Payment();
-            requestPayment.callbackUrl = "http://185.129.248.170/Migue/Nutaku/NutakuResponse.php";
+            requestPayment.callbackUrl = "http://185.129.248.170/Migue/Nutaku/NutakuResponseTDC.php";
         requestPayment.finishPageUrl = "https_//example.com/finish";
         requestPayment.message = "Gem Pack. "+gemsQuantity+ " gems.";
         _gemsToBuy = gemsQuantity;
@@ -42,6 +41,7 @@ public class NutakuPurchaseController : MonoBehaviour
         requestPayment.paymentItems.Add(item1);
         try
         {
+
             RestApiHelper.Request.PostPayment(requestPayment, this, this.TestRequestPostPaymentCallback);
         }
         catch (Exception ex)
@@ -52,8 +52,9 @@ public class NutakuPurchaseController : MonoBehaviour
     }
     void TestRequestPostPaymentCallback(RawResult rawResult)
     {
+        var json = Encoding.UTF8.GetString(rawResult.body);
+        print("Compro3--> " + json);
         var result = RestApi.HandleRequestCallback<Payment>(rawResult);
-
         try
         {
             if ((rawResult.statusCode > 199) && (rawResult.statusCode < 300))
@@ -163,7 +164,7 @@ public class NutakuPurchaseController : MonoBehaviour
     {
         string nutakuID = PlayerPrefs.GetString("NutakuID");
         int price = PlayerPrefs.GetInt("LastPurchasePrice");
-        UnityWebRequest www = UnityWebRequest.Get("http://s852714066.mialojamiento.es/tavernofsins/addpurchase.php?nutakuuserid="+nutakuID+ "&goldamount="+price);
+        UnityWebRequest www = UnityWebRequest.Get("http://s852714066.mialojamiento.es/thedevilsclub/addpurchase.php?nutakuuserid="+nutakuID+ "&goldamount="+price);
         yield return www.SendWebRequest();
         _rewardManager.EarnHardCoin(_gemsToBuy);
 

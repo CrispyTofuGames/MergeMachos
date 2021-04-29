@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <properties>
-    <appId>23611</appId>
-    <gameName>tavern-of-sins</gameName>
-    <consumerKey>gpcci32N7v3P4fZ7</consumerKey>
-    <consumerSecret>IVJOOicF@jWX@Y?e[[ig8_Z6xSJrZxoo</consumerSecret>
+    <appId>84477</appId>
+    <gameName>the-devils-club</gameName>
+    <consumerKey>Cnx9L44pkc0ZEcZz</consumerKey>
+    <consumerSecret>bzH7FS?lS[j43?Trkbr1?l_io7@X#3h$</consumerSecret>
     <mainActivity>com.nutaku.unity.UnityPlayerActivity</mainActivity>
     <environment>release</environment>
 </properties>

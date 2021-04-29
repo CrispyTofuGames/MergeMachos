@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: CrispyTofu
-  productName: Tavern of Sins
+  productName: The Devil's Club
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.3.07
+  bundleVersion: 1.0.1.01
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -170,9 +170,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.crispytofu.tavernofsins
+    Android: com.crispytofu.thedevilsclub
   buildNumber: {}
-  AndroidBundleVersionCode: 36
+  AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -270,7 +270,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 85081387e86f22f4898937858a64fea6, type: 3}
+      m_Icon: {fileID: 2800000, guid: 70478f48123d1794f96332e4ca5cadf0, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

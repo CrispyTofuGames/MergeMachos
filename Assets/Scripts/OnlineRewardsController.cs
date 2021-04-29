@@ -10,7 +10,7 @@ public class OnlineRewardsController : MonoBehaviour
     private void Start()
     {
         panelManager = FindObjectOfType<PanelManager>();
-        StartCoroutine(CheckOnlineRewards());
+        //StartCoroutine(CheckOnlineRewards());
     }
     IEnumerator CheckOnlineRewards()
     {

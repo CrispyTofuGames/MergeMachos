@@ -133,7 +133,7 @@ public class ConfigurationSceneController : MonoBehaviour
         form.AddField("username", username);
         form.AddField("nutakuuserid", nutakuID);
         form.AddField("currentuserdata", JsonUtility.ToJson(UserDataController._currentUserData));
-        UnityWebRequest www = UnityWebRequest.Post("http://s852714066.mialojamiento.es/tavernofsins/uploaduserdata.php", form);
+        UnityWebRequest www = UnityWebRequest.Post("http://s852714066.mialojamiento.es/TheDevilsClub/uploaduserdata.php", form);
         yield return www.SendWebRequest();
 
     }
@@ -141,7 +141,7 @@ public class ConfigurationSceneController : MonoBehaviour
     IEnumerator CrRequestAddUser(string username, string nutakuID)
     {
 
-        UnityWebRequest www = UnityWebRequest.Get("http://s852714066.mialojamiento.es/tavernofsins/adduser.php?username="+ username+"&& nutakuuserid=" + nutakuID);
+        UnityWebRequest www = UnityWebRequest.Get("http://s852714066.mialojamiento.es/TheDevilsClub/adduser.php?username=" + username+"&& nutakuuserid=" + nutakuID);
 
         yield return www.SendWebRequest();
         canGo = true;

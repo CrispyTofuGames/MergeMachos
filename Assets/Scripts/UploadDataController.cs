@@ -34,7 +34,7 @@ public class UploadDataController : MonoBehaviour
         form.AddField("nutakuuserid", nutakuID);
         form.AddField("currentuserdata", JsonUtility.ToJson(UserDataController._currentUserData));
 
-        UnityWebRequest www = UnityWebRequest.Post("http://s852714066.mialojamiento.es/tavernofsins/uploaduserdata.php", form);
+        UnityWebRequest www = UnityWebRequest.Post("http://s852714066.mialojamiento.es/TheDevilsClub/uploaduserdata.php", form);
         yield return www.SendWebRequest();
     }
 

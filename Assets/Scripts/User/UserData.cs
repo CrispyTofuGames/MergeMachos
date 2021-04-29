@@ -154,6 +154,10 @@ public class UserData
         _expositorSkinsFragments = new int[UserDataValues.expositorSkins];
         _groundSkinsFragments = new int[UserDataValues.groundSkins];
         _lootBoxes = new int[4];
+        _lootBoxes[0] = 1;
+        _lootBoxes[1] = 1;
+        _lootBoxes[2] = 1;
+        _lootBoxes[3] = 1;
         _checkedExperience = false;
         _epicChestsRedeemed = false;
         _epicChestsRedeemed2 = false;
