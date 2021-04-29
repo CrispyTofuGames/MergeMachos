@@ -35,7 +35,7 @@ public class DayCareManager : MonoBehaviour
 
     public enum PurchaseButtonType {SoftCoins, Hardcoins, Ad};
 
-    string[] dinoNames = { "Shori", "Runa", "Sooru", "Dylon", "Frenkie", "Tobio", "Tulio"};
+    string[] dinoNames = { "Shori", "Runa", "Sooru", "Dylon", "Frenkie", "Tobio", "Tulio", "Eric", "Paul", "Shaun"};
 
     int _fastPurchaseDinoType = 0;
     private void Awake()
