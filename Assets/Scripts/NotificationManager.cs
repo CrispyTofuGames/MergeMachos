@@ -45,7 +45,7 @@ public class NotificationManager : MonoBehaviour
     public void SendNotification(string notificationMessage, DateTime notificationTime)
     {
         _notification = new AndroidNotification();
-        _notification.Title = "Tavern of Sins";
+        _notification.Title = "The Devils Club";
         _notification.Text = notificationMessage;
         _notification.SmallIcon = "icon_0";
         _notification.LargeIcon = "icon_1";

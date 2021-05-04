@@ -13,6 +13,7 @@ public class ShopProductInstance : MonoBehaviour
     int _index = 0;
     bool _isGem = false;
     ShopManager _shopManager;
+    bool _canShop;
 
     public void Init(string reward, float realCost, int index, bool isGem, ShopManager s)
     {
@@ -22,9 +23,24 @@ public class ShopProductInstance : MonoBehaviour
         _isGem = isGem;
         _shopManager = s;
     }
+    private void Start()
+    {
+        _canShop = true;
+    }
     public void Purchase()
     {
-        _shopManager.Purchase(_isGem, _index);
+        if (_canShop)
+        {
+            _canShop = false;
+            _shopManager.Purchase(_isGem, _index);
+            StartCoroutine(RestoreCanShop());
+        }
+        
+    }
+    IEnumerator RestoreCanShop()
+    {
+        yield return new WaitForSeconds(3f);
+        _canShop = true;
     }
 
 }
