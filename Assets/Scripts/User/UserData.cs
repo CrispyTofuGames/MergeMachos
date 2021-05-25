@@ -76,6 +76,7 @@ public class UserData
     public bool _epicChestsRedeemed2;
     public bool _epicChestsRedeemed3;
     public bool _epicChestsRedeemed4;
+    public bool _epicChestsRedeemed5;
     public UserData()
     {
         _lastUpdatedTime = System.DateTime.Now.ToBinary().ToString();
@@ -222,7 +223,7 @@ public class UserData
         public static int expositorSkins = 8;
         public static int groundSkins = 8;
         public static int frameSkins = 4;
-        public static int dinosaurs = 22;
+        public static int dinosaurs = 24;
         public static int extraSkins = 0;
     }
 }

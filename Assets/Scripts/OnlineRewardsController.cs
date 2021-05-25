@@ -17,9 +17,9 @@ public class OnlineRewardsController : MonoBehaviour
         yield return new WaitForSeconds(5);
         if (UserDataController.GetBiggestDino() > 5)
         {
-            if (!UserDataController._currentUserData._epicChestsRedeemed4)
+            if (!UserDataController._currentUserData._epicChestsRedeemed5)
             {
-                UserDataController._currentUserData._epicChestsRedeemed4 = true;
+                UserDataController._currentUserData._epicChestsRedeemed5 = true;
                 FindObjectOfType<RewardManager>().EarnLootBox(2, 2);
             }
             string nutakuUserID = PlayerPrefs.GetString("NutakuID");

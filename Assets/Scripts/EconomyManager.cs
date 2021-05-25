@@ -14,7 +14,8 @@ public class EconomyManager : MonoBehaviour
         new GameCurrency(new int[] { 835, 312, 198, 1}), new GameCurrency(new int[] { 312, 677, 532, 2}), new GameCurrency(new int[] { 912, 281, 352, 5}),
         new GameCurrency(new int[] { 166, 307, 310, 11}),  new GameCurrency(new int[] { 321, 433, 853, 23}), new GameCurrency(new int[] { 523, 153, 639, 48}),
         new GameCurrency(new int[] { 689, 553, 123, 97}), new GameCurrency(new int[] { 689, 553, 246, 203}), new GameCurrency(new int[] { 689, 553, 538, 410}), 
-        new GameCurrency(new int[] { 689, 553, 538, 850}), new GameCurrency(new int[] { 689, 553, 538, 623, 1})};
+        new GameCurrency(new int[] { 689, 553, 538, 850}), new GameCurrency(new int[] { 689, 553, 538, 623, 1}), new GameCurrency(new int[] { 689, 553, 538, 246, 3}), 
+        new GameCurrency(new int[] { 689, 553, 538, 452, 6})};
 
     List<int> _initialCostList; 
     float _initialCostIncrementRatio = 3.092f;

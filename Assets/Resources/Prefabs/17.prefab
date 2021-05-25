@@ -867,7 +867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _otherCell: {fileID: 0}
-  _dinoAnimator: {fileID: 0}
+  _dinoAnimator: {fileID: 6867681917711794278}
   _dinoSprite: {fileID: 3562184097111692594}
   _animationCurve:
     serializedVersion: 2
