@@ -121,3 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d92077845123146923ca6b0b5f4f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cellSprite: {fileID: 9023468337894471294}

@@ -13,7 +13,6 @@ public class ExpositorInstance : MonoBehaviour
     EconomyManager _economyManager;
     GameObject dinoCopy;
     bool locked;
-    [SerializeField]
     SpriteRenderer _expositorSprite;
 
     public void Lock()
@@ -33,6 +32,7 @@ public class ExpositorInstance : MonoBehaviour
     private void Awake()
     {
         _economyManager = FindObjectOfType<EconomyManager>();
+        _expositorSprite = GetComponent<SpriteRenderer>();
         GameEvents.TouristWatchDino.AddListener(EarnMoney);
     }
     private void Start()

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <properties>
-    <appId>64833</appId>
+    <appId>84477</appId>
     <gameName>the-devils-club</gameName>
-    <consumerKey>m1HQtQutl0pPDWim</consumerKey>
-    <consumerSecret>VamlM6?kzAa4VwF#n]NKV$680fKp8UEL</consumerSecret>
+    <consumerKey>Cnx9L44pkc0ZEcZz</consumerKey>
+    <consumerSecret>bzH7FS?lS[j43?Trkbr1?l_io7@X#3h$</consumerSecret>
     <mainActivity>com.nutaku.unity.UnityPlayerActivity</mainActivity>
-    <environment>sandbox</environment>
+    <environment>release</environment>
 </properties>
