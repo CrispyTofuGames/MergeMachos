@@ -77,6 +77,7 @@ public class UserData
     public bool _epicChestsRedeemed3;
     public bool _epicChestsRedeemed4;
     public bool _epicChestsRedeemed5;
+    public bool _epicChestsRedeemed6;
     public UserData()
     {
         _lastUpdatedTime = System.DateTime.Now.ToBinary().ToString();
@@ -164,6 +165,8 @@ public class UserData
         _epicChestsRedeemed2 = false;
         _epicChestsRedeemed3 = false;
         _epicChestsRedeemed4 = false;
+        _epicChestsRedeemed5 = false;
+        _epicChestsRedeemed6 = false;
         //Poner Para Desbloquear TODO
         //_biggestDino = 36;
         //_experience = 10000;
